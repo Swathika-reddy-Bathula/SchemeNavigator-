@@ -1,0 +1,199 @@
+[2026-04-08 00:28:40,220] - 219 sentence_transformers.SentenceTransformer - INFO - SentenceTransformer: - Use pytorch device_name: cpu
+[2026-04-08 00:28:40,222] - 227 sentence_transformers.SentenceTransformer - INFO - SentenceTransformer: - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-04-08 00:28:42,517] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:42,892] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-04-08 00:28:43,187] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:43,189] - 916 huggingface_hub.utils._http - WARNING - _http: - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-04-08 00:28:43,249] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-04-08 00:28:43,536] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:44,154] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-04-08 00:28:44,423] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:44,465] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-04-08 00:28:44,788] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:44,835] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-04-08 00:28:45,105] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:45,149] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-04-08 00:28:45,427] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-04-08 00:28:46,083] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:46,132] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-04-08 00:28:46,748] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:46,796] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-04-08 00:28:47,073] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:47,394] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-04-08 00:28:47,680] - 1025 httpx - INFO - _client: - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-04-08 00:28:47,956] - 1025 httpx - INFO - _client: - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-04-08 00:28:48,422] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:28:48,469] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-04-08 00:28:48,788] - 1025 httpx - INFO - _client: - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-04-08 00:28:48,812] - 967 langchain_astradb.vectorstores - INFO - vectorstores: - vector store default init, collection 'schemes'
+[2026-04-08 00:28:49,319] - 252 root - INFO - astradb: - Attempting to fetch keyspace from environment variable 'ASTRA_DB_KEYSPACE'
+[2026-04-08 00:28:49,320] - 193 root - INFO - astradb: - Detecting API environment 'prod' from supplied endpoint
+[2026-04-08 00:28:49,328] - 830 astrapy.data.database - INFO - database: - createCollection('schemes')
+[2026-04-08 00:28:50,964] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace "HTTP/1.1 200 OK"
+[2026-04-08 00:28:50,966] - 389 astrapy.utils.api_commander - WARNING - api_commander: - APICommander about to raise from: [{'id': 'eb37cf91-f45e-49b4-9feb-79c20d3880ea', 'family': 'REQUEST', 'scope': 'SCHEMA', 'errorCode': 'EXISTING_COLLECTION_DIFFERENT_SETTINGS', 'title': 'Collection already exists with different settings', 'message': "Collection 'schemes' already exists but with settings different from ones passed with 'createCollection' command.\n\nIf you need to change collection settings you will need to 'deleteCollection', then re-create with new settings."}]
+[2026-04-08 00:28:50,967] - 963 astrapy.data.database - INFO - database: - findCollections
+[2026-04-08 00:28:51,247] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace "HTTP/1.1 200 OK"
+[2026-04-08 00:28:51,248] - 976 astrapy.data.database - INFO - database: - finished findCollections
+[2026-04-08 00:28:51,297] - 82 logger - INFO - ingestion: - 
+Processing document group: 2025-26OrganicCarbonMissionschemeguidelines
+[2026-04-08 00:28:55,162] - 864 astrapy.data.collection - INFO - collection: - inserting 26 documents in 'schemes'
+[2026-04-08 00:28:55,164] - 938 astrapy.data.collection - INFO - collection: - insertMany(chunk) on 'schemes'
+[2026-04-08 00:28:58,314] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace/schemes "HTTP/1.1 200 OK"
+[2026-04-08 00:28:58,317] - 948 astrapy.data.collection - INFO - collection: - finished insertMany(chunk) on 'schemes'
+[2026-04-08 00:28:58,320] - 106 logger - ERROR - ingestion: - Failed to insert chunks for 2025-26OrganicCarbonMissionschemeguidelines: Cannot insert documents. The Data API returned the following error(s): The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.. (Note: 18 further errors omitted.) (Full API error in '<this-exception>.__cause__.error_descriptors': ignore 'DOCUMENT_ALREADY_EXISTS'.)
+[2026-04-08 00:28:58,321] - 82 logger - INFO - ingestion: - 
+Processing document group: Bufferstock guidelines
+[2026-04-08 00:28:58,955] - 864 astrapy.data.collection - INFO - collection: - inserting 10 documents in 'schemes'
+[2026-04-08 00:28:58,958] - 938 astrapy.data.collection - INFO - collection: - insertMany(chunk) on 'schemes'
+[2026-04-08 00:29:09,744] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace/schemes "HTTP/1.1 200 OK"
+[2026-04-08 00:29:09,745] - 948 astrapy.data.collection - INFO - collection: - finished insertMany(chunk) on 'schemes'
+[2026-04-08 00:29:09,746] - 106 logger - ERROR - ingestion: - Failed to insert chunks for Bufferstock guidelines: Cannot insert documents. The Data API returned the following error(s): The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.. (Note: 2 further errors omitted.) (Full API error in '<this-exception>.__cause__.error_descriptors': ignore 'DOCUMENT_ALREADY_EXISTS'.)
+[2026-04-08 00:29:09,747] - 82 logger - INFO - ingestion: - 
+Processing document group: circlar-5
+[2026-04-08 00:29:09,925] - 864 astrapy.data.collection - INFO - collection: - inserting 3 documents in 'schemes'
+[2026-04-08 00:29:09,926] - 938 astrapy.data.collection - INFO - collection: - insertMany(chunk) on 'schemes'
+[2026-04-08 00:29:10,229] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace/schemes "HTTP/1.1 200 OK"
+[2026-04-08 00:29:10,230] - 948 astrapy.data.collection - INFO - collection: - finished insertMany(chunk) on 'schemes'
+[2026-04-08 00:29:10,231] - 106 logger - ERROR - ingestion: - Failed to insert chunks for circlar-5: Cannot insert documents. The Data API returned the following error(s): The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length. (Full API error in '<this-exception>.__cause__.error_descriptors': ignore 'DOCUMENT_ALREADY_EXISTS'.)
+[2026-04-08 00:29:10,232] - 82 logger - INFO - ingestion: - 
+Processing document group: cmsclorship
+[2026-04-08 00:29:10,639] - 864 astrapy.data.collection - INFO - collection: - inserting 8 documents in 'schemes'
+[2026-04-08 00:29:10,640] - 938 astrapy.data.collection - INFO - collection: - insertMany(chunk) on 'schemes'
+[2026-04-08 00:29:10,982] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace/schemes "HTTP/1.1 200 OK"
+[2026-04-08 00:29:10,984] - 948 astrapy.data.collection - INFO - collection: - finished insertMany(chunk) on 'schemes'
+[2026-04-08 00:29:10,986] - 106 logger - ERROR - ingestion: - Failed to insert chunks for cmsclorship: Cannot insert documents. The Data API returned the following error(s): The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length.; The command attempted to update or find using `$vector`, using a vector that has a length different to the declared '$vector' dimension for the Collection.
+
+The collection was: default_keyspace.schemes.
+The configured vector dimension is: 1024.
+
+Resend the command using a vector of the correct length. (Full API error in '<this-exception>.__cause__.error_descriptors': ignore 'DOCUMENT_ALREADY_EXISTS'.)

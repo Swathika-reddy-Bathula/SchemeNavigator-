@@ -1,0 +1,13 @@
+PyMuPDF
+python-dotenv
+langchain
+langchain-text-splitters
+langgraph
+langchain-huggingface
+langchain-astradb
+pdf2image
+sentence-transformers
+fastapi
+uvicorn
+groq
+pydantic

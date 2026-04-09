@@ -1,0 +1,65 @@
+[2026-04-08 00:33:09,504] - 219 sentence_transformers.SentenceTransformer - INFO - SentenceTransformer: - Use pytorch device_name: cpu
+[2026-04-08 00:33:09,504] - 227 sentence_transformers.SentenceTransformer - INFO - SentenceTransformer: - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2026-04-08 00:33:10,637] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:10,680] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-04-08 00:33:10,948] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:11,243] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-04-08 00:33:11,509] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:11,805] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+[2026-04-08 00:33:12,071] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:12,071] - 916 huggingface_hub.utils._http - WARNING - _http: - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-04-08 00:33:12,113] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+[2026-04-08 00:33:12,382] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:12,429] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+[2026-04-08 00:33:12,695] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:12,738] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+[2026-04-08 00:33:13,275] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-04-08 00:33:13,550] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:13,598] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-04-08 00:33:14,023] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:14,337] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[2026-04-08 00:33:14,695] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:14,738] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-04-08 00:33:15,012] - 1025 httpx - INFO - _client: - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-04-08 00:33:15,280] - 1025 httpx - INFO - _client: - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-04-08 00:33:15,601] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-08 00:33:15,644] - 1025 httpx - INFO - _client: - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+[2026-04-08 00:33:16,797] - 1025 httpx - INFO - _client: - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+[2026-04-08 00:33:16,802] - 967 langchain_astradb.vectorstores - INFO - vectorstores: - vector store default init, collection 'schemes_minilm'
+[2026-04-08 00:33:16,840] - 252 root - INFO - astradb: - Attempting to fetch keyspace from environment variable 'ASTRA_DB_KEYSPACE'
+[2026-04-08 00:33:16,840] - 193 root - INFO - astradb: - Detecting API environment 'prod' from supplied endpoint
+[2026-04-08 00:33:16,843] - 830 astrapy.data.database - INFO - database: - createCollection('schemes_minilm')
+[2026-04-08 00:33:34,419] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace "HTTP/1.1 200 OK"
+[2026-04-08 00:33:34,420] - 843 astrapy.data.database - INFO - database: - finished createCollection('schemes_minilm')
+[2026-04-08 00:33:34,421] - 82 logger - INFO - ingestion: - 
+Processing document group: 2025-26OrganicCarbonMissionschemeguidelines
+[2026-04-08 00:33:35,927] - 864 astrapy.data.collection - INFO - collection: - inserting 26 documents in 'schemes_minilm'
+[2026-04-08 00:33:35,929] - 938 astrapy.data.collection - INFO - collection: - insertMany(chunk) on 'schemes_minilm'
+[2026-04-08 00:33:39,295] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace/schemes_minilm "HTTP/1.1 200 OK"
+[2026-04-08 00:33:39,296] - 948 astrapy.data.collection - INFO - collection: - finished insertMany(chunk) on 'schemes_minilm'
+[2026-04-08 00:33:39,297] - 1016 astrapy.data.collection - INFO - collection: - finished inserting 26 documents in 'schemes_minilm'
+[2026-04-08 00:33:39,298] - 104 logger - INFO - ingestion: - Inserted 26 chunks for 2025-26OrganicCarbonMissionschemeguidelines
+[2026-04-08 00:33:39,298] - 82 logger - INFO - ingestion: - 
+Processing document group: Bufferstock guidelines
+[2026-04-08 00:33:39,753] - 864 astrapy.data.collection - INFO - collection: - inserting 10 documents in 'schemes_minilm'
+[2026-04-08 00:33:39,754] - 938 astrapy.data.collection - INFO - collection: - insertMany(chunk) on 'schemes_minilm'
+[2026-04-08 00:33:40,706] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace/schemes_minilm "HTTP/1.1 200 OK"
+[2026-04-08 00:33:40,707] - 948 astrapy.data.collection - INFO - collection: - finished insertMany(chunk) on 'schemes_minilm'
+[2026-04-08 00:33:40,708] - 1016 astrapy.data.collection - INFO - collection: - finished inserting 10 documents in 'schemes_minilm'
+[2026-04-08 00:33:40,708] - 104 logger - INFO - ingestion: - Inserted 10 chunks for Bufferstock guidelines
+[2026-04-08 00:33:40,708] - 82 logger - INFO - ingestion: - 
+Processing document group: circlar-5
+[2026-04-08 00:33:40,844] - 864 astrapy.data.collection - INFO - collection: - inserting 3 documents in 'schemes_minilm'
+[2026-04-08 00:33:40,845] - 938 astrapy.data.collection - INFO - collection: - insertMany(chunk) on 'schemes_minilm'
+[2026-04-08 00:33:41,146] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace/schemes_minilm "HTTP/1.1 200 OK"
+[2026-04-08 00:33:41,147] - 948 astrapy.data.collection - INFO - collection: - finished insertMany(chunk) on 'schemes_minilm'
+[2026-04-08 00:33:41,148] - 1016 astrapy.data.collection - INFO - collection: - finished inserting 3 documents in 'schemes_minilm'
+[2026-04-08 00:33:41,149] - 104 logger - INFO - ingestion: - Inserted 3 chunks for circlar-5
+[2026-04-08 00:33:41,149] - 82 logger - INFO - ingestion: - 
+Processing document group: cmsclorship
+[2026-04-08 00:33:41,540] - 864 astrapy.data.collection - INFO - collection: - inserting 8 documents in 'schemes_minilm'
+[2026-04-08 00:33:41,542] - 938 astrapy.data.collection - INFO - collection: - insertMany(chunk) on 'schemes_minilm'
+[2026-04-08 00:33:41,854] - 1025 httpx - INFO - _client: - HTTP Request: POST https://3735f3e2-ce81-42b9-b397-2243d52ecc4b-us-east1.apps.astra.datastax.com/api/json/v1/default_keyspace/schemes_minilm "HTTP/1.1 200 OK"
+[2026-04-08 00:33:41,855] - 948 astrapy.data.collection - INFO - collection: - finished insertMany(chunk) on 'schemes_minilm'
+[2026-04-08 00:33:41,856] - 1016 astrapy.data.collection - INFO - collection: - finished inserting 8 documents in 'schemes_minilm'
+[2026-04-08 00:33:41,857] - 104 logger - INFO - ingestion: - Inserted 8 chunks for cmsclorship
