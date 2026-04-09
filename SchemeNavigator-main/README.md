@@ -151,7 +151,4 @@ Continue:
 - Keep `.env` out of Git. Commit only `.env.example`.
 - Ignore generated folders like `.venv`, `frontend/node_modules`, `frontend/dist`, and `__pycache__`.
 
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
 
