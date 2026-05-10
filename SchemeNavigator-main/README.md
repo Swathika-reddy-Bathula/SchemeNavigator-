@@ -1,154 +1,202 @@
-# Scheme Navigator
+    # Scheme Navigator
 
-Scheme Navigator is a full-stack RAG chatbot for Karnataka agriculture schemes.
+    Scheme Navigator is a full-stack RAG chatbot for Karnataka agriculture schemes.
 
-- Backend: FastAPI + LangGraph + LangChain
-- Vector DB: Astra DB
-- LLM: Groq (`meta-llama/llama-4-scout-17b-16e-instruct`)
-- Frontend: React + Vite
+    - Backend: FastAPI + LangGraph + LangChain
+    - Vector DB: Astra DB
+    - LLM: Groq (`meta-llama/llama-4-scout-17b-16e-instruct`)
+    - Frontend: React + Vite
 
-## Features
+    ## Features
 
-- Ask scheme-related questions against your ingested knowledge base
-- Multi-turn chat with conversation memory
-- Conversation history APIs (list, view, rename, delete)
-- Simple health endpoint for frontend status checks
-- JSONL interaction logging
+    - Ask scheme-related questions against your ingested knowledge base
+    - Multi-turn chat with conversation memory
+    - Conversation history APIs (list, view, rename, delete)
+    - Simple health endpoint for frontend status checks
+    - JSONL interaction logging
 
-## Project Structure
+    ## Project Structure
 
-```text
-.
-├── app.py                  # FastAPI app and REST endpoints
-├── Graph/pipeline.py       # LangGraph RAG pipeline
-├── LLM/llm.py              # Groq chat client
-├── Memory/                 # Conversation memory helper
-├── History/                # File-based chat history store
-├── Data/ingestion.py       # Astra DB ingestion script
-├── frontend/               # React + Vite UI
-├── .env.example            # Backend environment template
-└── frontend/.env.example   # Frontend environment template
-```
+    ```text
+    .
+    ├── app.py                  # FastAPI app and REST endpoints
+    ├── Graph/pipeline.py       # LangGraph RAG pipeline
+    ├── LLM/llm.py              # Groq chat client
+    ├── Memory/                 # Conversation memory helper
+    ├── History/                # File-based chat history store
+    ├── Data/ingestion.py       # Astra DB ingestion script
+    ├── frontend/               # React + Vite UI
+    ├── tests/                  # Pytest test suite
+    ├── Dockerfile              # Backend containerization
+    ├── docker-compose.yml      # Multi-service orchestration
+    ├── pytest.ini              # Pytest configuration
+    ├── .env.example            # Backend environment template
+    ├── frontend/.env.example   # Frontend environment template
+    └── requirements.txt        # Python dependencies
+    ```
 
-## Prerequisites
+    ## Prerequisites
 
-- Python 3.10+
-- Node.js 18+ and npm
-- Astra DB account and collection access
-- Groq API key
+    - Python 3.10+
+    - Node.js 18+ and npm
+    - Docker and Docker Compose (optional, for containerized deployment)
+    - Astra DB account and collection access
+    - Groq API key
 
-## Backend Setup
+    ## Backend Setup
 
-1. Create and activate a virtual environment.
-2. Install Python dependencies.
-3. Create `.env` from `.env.example`.
-4. Start the API server.
+    1. Create and activate a virtual environment.
+    2. Install Python dependencies.
+    3. Create `.env` from `.env.example`.
+    4. Start the API server.
 
-```bash
-python -m venv .venv
-```
+    ```bash
+    python -m venv .venv
+    ```
 
-Windows PowerShell:
+    Windows PowerShell:
 
-```powershell
-.venv\Scripts\Activate.ps1
-```
+    ```powershell
+    .venv\Scripts\Activate.ps1
+    ```
 
-macOS/Linux:
+    macOS/Linux:
 
-```bash
-source .venv/bin/activate
-```
+    ```bash
+    source .venv/bin/activate
+    ```
 
-Install dependencies:
+    Install dependencies:
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Create `.env` in project root:
+    Create `.env` in project root:
 
-```env
-GROQ_API_KEY=replace_with_your_groq_api_key
-ASTRA_DB_ENDPOINT=https://your-database-id-your-region.apps.astra.datastax.com
-ASTRA_DB_TOKEN=AstraCS:replace_with_your_astra_db_application_token
-ASTRA_DB_COLLECTION=Schemes
-LOG_FILE=interactions_log.jsonl
-```
+    ```env
+    GROQ_API_KEY=replace_with_your_groq_api_key
+    ASTRA_DB_ENDPOINT=https://your-database-id-your-region.apps.astra.datastax.com
+    ASTRA_DB_TOKEN=AstraCS:replace_with_your_astra_db_application_token
+    ASTRA_DB_COLLECTION=Schemes
+    LOG_FILE=interactions_log.jsonl
+    ```
 
-Run backend:
+    Run backend:
 
-```bash
-uvicorn app:app --reload
-```
+    ```bash
+    uvicorn app:app --reload
+    ```
 
-Backend default URL: `http://127.0.0.1:8000`
+    Backend default URL: `http://127.0.0.1:8000`
 
-## Frontend Setup
+    ## Frontend Setup
 
-1. Go to the `frontend` folder.
-2. Install npm dependencies.
-3. Create `frontend/.env` from `frontend/.env.example`.
-4. Run Vite dev server.
+    1. Go to the `frontend` folder.
+    2. Install npm dependencies.
+    3. Create `frontend/.env` from `frontend/.env.example`.
+    4. Run Vite dev server.
 
-```bash
-cd frontend
-npm install
-```
+    ```bash
+    cd frontend
+    npm install
+    ```
 
-`frontend/.env`:
+    `frontend/.env`:
 
-```env
-VITE_API_URL=http://127.0.0.1:8000
-```
+    ```env
+    VITE_API_URL=http://127.0.0.1:8000
+    ```
 
-Run frontend:
+    Run frontend:
 
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
 
-## Ingest Data into Astra DB
+    ## Testing
 
-Place source documents under `Translated/Ingestion` (as expected by `Data/ingestion.py`), then run:
+    Run the test suite using Pytest:
 
-```bash
-python Data/ingestion.py
-```
+    ```bash
+    pytest
+    ```
 
-## API Endpoints
+    Or with verbose output:
 
-- `GET /status` - API health/status
-- `POST /start` - Start a new conversation
-- `POST /continue` - Continue an existing conversation
-- `GET /history` - List all conversations
-- `GET /history/{user_id}` - Get one conversation
-- `PUT /history/{user_id}` - Update conversation title
-- `DELETE /history/{user_id}` - Delete conversation
+    ```bash
+    pytest -v
+    ```
 
-## Request Examples
+    The tests cover:
+    - API endpoint functionality
+    - Response validation
+    - Error handling
 
-Start:
+    ## Docker Deployment
 
-```json
-{
-  "user_query": "What subsidy is available for drip irrigation?"
-}
-```
+    ### Using Docker Compose (Recommended)
 
-Continue:
+    1. Ensure Docker and Docker Compose are installed.
+    2. Create `.env` file in project root with your API keys.
+    3. Run the entire stack:
 
-```json
-{
-  "user_id": "your-conversation-id",
-  "user_query": "Can you summarize eligibility criteria?"
-}
-```
+    ```bash
+    docker-compose up --build
+    ```
 
-## Notes
+    This will start:
+    - Backend API on `http://localhost:8000`
+    - Frontend on `http://localhost:5173`
 
-- `chat_history.json` and `interactions_log.jsonl` are runtime files and should not be committed.
-- Keep `.env` out of Git. Commit only `.env.example`.
-- Ignore generated folders like `.venv`, `frontend/node_modules`, `frontend/dist`, and `__pycache__`.
+    ### Building Individual Images
 
+    Build backend image:
 
+    ```bash
+    docker build -t scheme-navigator-backend .
+    ```
+
+    Build frontend image:
+
+    ```bash
+    cd frontend
+    docker build -t scheme-navigator-frontend .
+    ```
+
+    ## Ingest Data into Astra DB
+
+    Place source documents under `Translated/Ingestion` (as expected by `Data/ingestion.py`), then run:
+
+    ```bash
+    python Data/ingestion.py
+    ```
+
+    ## API Endpoints
+
+    - `GET /status` - API health/status
+    - `POST /start` - Start a new conversation
+    - `POST /continue` - Continue an existing conversation
+    - `GET /history` - List all conversations
+    - `GET /history/{user_id}` - Get one conversation
+    - `PUT /history/{user_id}` - Update conversation title
+    - `DELETE /history/{user_id}` - Delete conversation
+
+    ## Request Examples
+
+    Start:
+
+    ```json
+    {
+    "user_query": "What subsidy is available for drip irrigation?"
+    }
+    ```
+
+    Continue:
+
+    ```json
+    {
+    "user_id": "your-conversation-id",
+    "user_query": "Can you summarize eligibility criteria?"
+    }
+    ```
